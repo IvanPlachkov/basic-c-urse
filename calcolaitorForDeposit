@@ -1,0 +1,14 @@
+function depositCalculator(input){
+let depositAmount = Number(input[0]);
+let termDeposit = Number(input[1]);
+let amountInterestRate = Number(input[2]);
+
+let yearDepositAmount = depositAmount * (amountInterestRate / 100 );
+let mounthDeposit = yearDepositAmount / 12;
+
+let total = mounthDeposit * termDeposit;
+let totalMoney = total + depositAmount;
+console.log(totalMoney)
+// 5,7  procenta delim na 100  = 0.057
+}
+depositCalculator(["200","3","5.7"])
